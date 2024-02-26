@@ -1,6 +1,13 @@
-Dockerfile: ./images/my-image1/Dockerfile
-#jobs:
-#  path: jobs
-#  jobs:
-#    - name: train2.yaml
-#      run: true
+components:
+  path: kubeflow/components
+  components:
+    - name: my_add
+    - name: my_divide
+
+pipelines:
+  path: kubeflow/pipeline
+  pipelines:
+    - name: workflow.py
+      build_image: ocdr/d3cicd:1.5.9
+      run: true
+      user: ocdkube
