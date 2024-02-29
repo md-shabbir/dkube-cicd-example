@@ -170,6 +170,8 @@ def d3pipeline(
     transformer_image=json.dumps({'image':'ocdr/dkube-datascience-tf-cpu:v2.3.0-17'}),
     #Script to execute the transformer
     transformer_code="clinical_reg/transformer.py"):
+
+    tags = json.dumps(["testing",f"project:{project_id}"])
     
     create_resource = setup_op(user = user, token = auth_token, project_id = project_id)
     
