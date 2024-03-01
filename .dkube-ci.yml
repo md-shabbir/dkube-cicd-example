@@ -9,6 +9,6 @@ pipelines:
   user: "ocdkube"
   pipelines:
     - name: workflow.py
-      build_image: ocdr/d3cicd:1.6.3
+      build_image: shabbir123.jfrog.io/sbr543/d3cicd:1.6.3.test
       run: True
       user: "ocdkube"
