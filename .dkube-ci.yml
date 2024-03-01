@@ -10,5 +10,6 @@ pipelines:
   pipelines:
     - name: workflow.py
       build_image: ocdr/d3cicd:1.5.9
+      pipeline_build_image: ocdr/d3cicd:1.5.9
       run: True
       user: "ocdkube"
