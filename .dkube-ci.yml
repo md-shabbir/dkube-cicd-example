@@ -1,5 +1,6 @@
 pipelines:
   path: kubeflow/pipeline
+  user: "ocdkube24-oc"
   pipelines:
     - name: workflow.py
       build_image: ocdr/d3cicd:regression
